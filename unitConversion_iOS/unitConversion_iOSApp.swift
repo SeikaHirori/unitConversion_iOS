@@ -63,3 +63,19 @@ func pintsToMililiters(_ Pints: Double) -> Double {
     
     return result
 }
+
+func mililitersToGallon(_ mililiters: Double) -> Double {
+    var result: Double = 0.0
+    
+    
+    
+    return result
+}
+
+func gallonToMililiters(_ Gallons:Double) -> Double {
+    var result: Double = 0.0
+    
+    
+    
+    return result
+}

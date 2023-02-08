@@ -8,6 +8,11 @@ ___
 
 # Specifications
 **Logic**
+- IMPORTANT:
+    - Units will be rounded to the nearby tenth place.
+        - Examples:
+            - 100.2913 ~= 100.3
+            - 0.12 ~= 0.1
 - [ ] Pick a type of unit conversion
     - Volume conversion:
         - milliliter (mL)
