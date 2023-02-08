@@ -45,6 +45,7 @@
 		3F62CF31299421B600AC7744 /* unitConversion_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitConversion_iOSUITests.swift; sourceTree = "<group>"; };
 		3F62CF33299421B600AC7744 /* unitConversion_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitConversion_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F62CF402994234700AC7744 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F62CF412994346600AC7744 /* RFER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RFER.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		3F62CF0A299421B400AC7744 = {
 			isa = PBXGroup;
 			children = (
+				3F62CF412994346600AC7744 /* RFER.md */,
 				3F62CF402994234700AC7744 /* README.md */,
 				3F62CF15299421B400AC7744 /* unitConversion_iOS */,
 				3F62CF26299421B600AC7744 /* unitConversion_iOSTests */,

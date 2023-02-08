@@ -31,3 +31,11 @@ func litersToMililiters(_ Liters: Double) -> Double {
     
     return result
 }
+
+func mililitersToC(_ mL:Double) -> Double {
+    var result: Double
+    
+    result = mL / 236
+    
+    return result
+}

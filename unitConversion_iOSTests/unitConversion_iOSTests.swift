@@ -43,6 +43,13 @@ final class unitConversion_iOSTests: XCTestCase {
         XCTAssertEqual(output1, expect1)
     }
     
-    
+    func testMililitersToC() {
+        let inputMiliiters: Double = 236.6
+        let expectedCup: Double = 1.0
+        
+        let output1: Double = mililitersToC(inputMiliiters)
+        
+        XCTAssertEqual(output1, expectedCup, accuracy: 0.01) // RFER #1
+    }
 
 }

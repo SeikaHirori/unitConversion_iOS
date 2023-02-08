@@ -18,7 +18,7 @@ ___
         - gallon (gal)
     - Write conversions:
         - [x] mL to L
-        - [ ] mL to C
+        - [x] mL to C
         - [ ] mL to pt
         - [ ] mL to gal
         
@@ -26,7 +26,7 @@ ___
         - [ ] C to mL
         - [ ] pt to mL
         - [ ] gal to mL
-        
+
 **User Interface**
 - [ ] Segmented control (from) 
 - [ ] Segmented control (to)
