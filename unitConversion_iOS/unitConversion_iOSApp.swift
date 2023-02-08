@@ -15,3 +15,11 @@ struct unitConversion_iOSApp: App {
         }
     }
 }
+
+func mililitersToLiter(mL: Double) -> Double {
+    var result: Double
+    
+    result = mL / 1000
+    
+    return result
+}
