@@ -92,11 +92,18 @@ final class unitConversion_iOSTests: XCTestCase {
     
     func testGallonToMililiters() {
         let inputGallon: Double = 1.0
-        let expectedMililiters = 3785.0 
+        let expectedMililiters = 3785.0
         
         let output1: Double = gallonToMililiters(inputGallon)
         
         XCTAssertEqual(output1, expectedMililiters, accuracy: accuraryRounded)
     }
 
+    
+    
+    func testUnitType() {
+        let expectedTypeGallon:
+        
+    }
+    
 }

@@ -25,12 +25,12 @@ ___
         - [x] mL to L
         - [x] mL to C
         - [x] mL to pt
-        - [ ] mL to gal
+        - [x] mL to gal
         
         - [x] L to mL
         - [x] C to mL
         - [x] pt to mL
-        - [ ] gal to mL
+        - [x] gal to mL
 
 **User Interface**
 - [ ] Segmented control (from) 
