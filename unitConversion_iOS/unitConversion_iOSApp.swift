@@ -40,10 +40,18 @@ func mililitersToC(_ mL:Double) -> Double {
     return result
 }
 
-func cupsToMililiters(_ Cups: Double) -> Double{
-    var output: Double = 0.0
+func cupsToMililiters(_ Cups: Double) -> Double {
+    var result: Double
     
-    output = Cups * 236.6
+    result = Cups * 236.6
     
-    return output
+    return result
+}
+
+func mililitersToPints(_ mililiters: Double) -> Double {
+    var result: Double
+    
+    result = mililiters / 473.2
+    
+    return result
 }

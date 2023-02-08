@@ -62,5 +62,14 @@ final class unitConversion_iOSTests: XCTestCase {
         XCTAssertEqual(output1, expectedMililiters, accuracy: accuraryRounded)
         
     }
+    
+    func testMililitersToPints(){
+        let inputMililiters: Double = 473.2
+        let expectedPints: Double = 1.0
+        
+        let output1: Double = mililitersToPints(inputMililiters)
+        
+        XCTAssertEqual(output1, expectedPints, accuracy: accuraryRounded)
+    }
 
 }
