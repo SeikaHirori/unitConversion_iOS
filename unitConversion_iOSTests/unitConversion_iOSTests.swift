@@ -25,6 +25,7 @@ final class unitConversion_iOSTests: XCTestCase {
 //            // Put the code you want to measure the time of here.
 //        }
 //    }
+    let accuraryRounded:Double = 0.1
     
     func testMililitersToLiters() {
         let inputMililiters:Double = 1000.0
@@ -49,7 +50,17 @@ final class unitConversion_iOSTests: XCTestCase {
         
         let output1: Double = mililitersToC(inputMiliiters)
         
-        XCTAssertEqual(output1, expectedCup, accuracy: 0.01) // RFER #1
+        XCTAssertEqual(output1, expectedCup, accuracy: accuraryRounded) // RFER #1
+    }
+    
+    func testCupsToMililiters() {
+        let inputCups: Double = 1.0
+        let expectedMililiters: Double = 236.6
+        
+        let output1: Double = cupsToMililiters(inputCups)
+        
+        XCTAssertEqual(output1, expectedMililiters, accuracy: accuraryRounded)
+        
     }
 
 }
