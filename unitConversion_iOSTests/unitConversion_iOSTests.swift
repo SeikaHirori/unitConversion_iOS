@@ -18,21 +18,31 @@ final class unitConversion_iOSTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    
+//    func testPerformanceExample() throws {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
+    
     func testMililitersToLiters() {
         let inputMililiters:Double = 1000.0
         let expect1:Double = 1.0
         
-        let output1: Double = mililitersToLiter(mL: inputMililiters)
+        let output1: Double = mililitersToLiters(inputMililiters)
         XCTAssertEqual(output1, expect1)
         
     }
     
-    
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testLitersToMililiters() {
+        let inputLiters: Double = 1.0
+        let expect1: Double = 1000.0
+        
+        let output1: Double = litersToMililiters(inputLiters)
+        XCTAssertEqual(output1, expect1)
     }
+    
+    
 
 }
