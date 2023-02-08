@@ -55,3 +55,11 @@ func mililitersToPints(_ mililiters: Double) -> Double {
     
     return result
 }
+
+func pintsToMililiters(_ Pints: Double) -> Double {
+    var result: Double = 0.0
+    
+    result = Pints * 473.2
+    
+    return result
+}

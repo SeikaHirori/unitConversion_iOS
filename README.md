@@ -19,12 +19,12 @@ ___
     - Write conversions:
         - [x] mL to L
         - [x] mL to C
-        - [ ] mL to pt
+        - [x] mL to pt
         - [ ] mL to gal
         
         - [x] L to mL
         - [x] C to mL
-        - [ ] pt to mL
+        - [x] pt to mL
         - [ ] gal to mL
 
 **User Interface**
