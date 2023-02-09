@@ -33,7 +33,12 @@ ___
         - [x] gal to mL
 
 **User Interface**
-- [ ] Segmented control (from) 
+- [ ] Segmented control (from)
+    - Header: "Convert from"
 - [ ] Segmented control (to)
+    - Header: "Convert to"
 - [ ] textField where user inputs number
-- [ ] result of conversion
+    - What is the amount you're converting?
+    - Text (when empty) should state "Amount"
+- [ ] Text where it has the result of conversion
+    - Header: "Result/conversion"
