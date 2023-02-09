@@ -24,6 +24,32 @@ enum unitMeasurementType:String {
     case gallon = "gal"
 }
 
+func convertMeasurements(amount: Double, from: unitMeasurementType, to: unitMeasurementType) -> Double? {
+    var output: Double? = nil
+    
+    var convertAmountTo_mL: Double
+    
+    // Convert input amount into the base unit, mililiters
+    switch from {
+    case unitMeasurementType.mililiters:
+        convertAmountTo_mL = amount
+    case unitMeasurementType.liter:
+        convertAmountTo_mL = litersToMililiters(amount)
+    case unitMeasurementType.cup:
+        convertAmountTo_mL = cupsToMililiters(amount)
+    case unitMeasurementType.pint:
+        convertAmountTo_mL = pintsToMililiters(amount)
+    case unitMeasurementType.gallon:
+        convertAmountTo_mL = gallonToMililiters(amount)
+    default:
+        return nil
+    }
+    
+    
+    
+    return output
+}
+
 func displayMeasurementToUser(amount:Double, unit:unitMeasurementType) -> String {
     var output:String
     

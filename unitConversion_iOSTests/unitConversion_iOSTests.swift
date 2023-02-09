@@ -136,4 +136,19 @@ final class unitConversion_iOSTests: XCTestCase {
         let expect_2:String = "29.2 mL"
         XCTAssertEqual(result_2, expect_2)
     }
+    
+    func testConvertMeasurements() {
+        let input_mL_1:Double = 1000.0
+        let input_from_1:unitMeasurementType = unitMeasurementType.mililiters
+        let input_to_1:unitMeasurementType = unitMeasurementType.liter
+        let output_1: Double? = convertMeasurements(amount: input_mL_1, from: input_from_1, to: input_to_1)
+        XCTAssertNotNil(output_1)
+        
+        let expect_1:Double = 1.0
+        XCTAssertEqual(output_1, expect_1)
+
+        
+        
+    }
+    
 }
