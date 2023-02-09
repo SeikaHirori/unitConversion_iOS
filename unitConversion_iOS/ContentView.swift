@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var unitTypeFrom:unitMeasurementType = unitMeasurementType.mililiters
+    @State private var unitTypeTo: unitMeasurementType = unitMeasurementType.liter
+    @State private var amountFromValue: Double = 0.0
+    
+    @FocusState private var amountFromIsFocused: Bool
+    
+    var amountToValue:Double {
+        var result:Double = convertMeasurements(amount: amountFromValue, from: unitTypeFrom, to: unitTypeTo)
+        return result
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
