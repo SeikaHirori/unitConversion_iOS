@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import ViewInspector
 
 final class unitConversion_iOSUITests: XCTestCase {
 

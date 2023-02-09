@@ -147,6 +147,8 @@
 			dependencies = (
 			);
 			name = unitConversion_iOS;
+			packageProductDependencies = (
+			);
 			productName = unitConversion_iOS;
 			productReference = 3F62CF13299421B400AC7744 /* unitConversion_iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +221,8 @@
 				Base,
 			);
 			mainGroup = 3F62CF0A299421B400AC7744;
+			packageReferences = (
+			);
 			productRefGroup = 3F62CF14299421B400AC7744 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
