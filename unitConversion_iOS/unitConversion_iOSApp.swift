@@ -27,8 +27,8 @@ enum unitMeasurementType:String {
 func displayMeasurementToUser(amount:Double, unit:unitMeasurementType) -> String {
     var output:String
     
-    output = String(format: "%.1f \(unit.rawValue)", amount) // Round for the user
-    
+    // Rounded for the user to see
+    output = String(format: "%.1f \(unit.rawValue)", amount) // RFER #3
     return output
 }
 

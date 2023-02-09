@@ -11,3 +11,8 @@
             - Discussion: https://forums.swift.org/t/the-error-cannot-find-auto-link-library-xctest-and-xctestswiftsupport/34785/5
             - Steps to remove package:
                 - https://stackoverflow.com/a/56719712
+
+- RFER #3: Ronuding with fstring
+    - Link:
+        - https://stackoverflow.com/a/34930127
+    
