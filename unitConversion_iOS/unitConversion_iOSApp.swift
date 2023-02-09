@@ -16,7 +16,6 @@ struct unitConversion_iOSApp: App {
     }
 }
 
-
 enum unitMeasurementType:String {
     case mililiters = "mL"
     case liter = "L"
@@ -25,10 +24,10 @@ enum unitMeasurementType:String {
     case gallon = "gal"
 }
 
-func displayMeasurement(amount:Double, unit:unitMeasurementType) -> String {
+func displayMeasurementToUser(amount:Double, unit:unitMeasurementType) -> String {
     var output:String
     
-    output = "\(amount)\(unit.rawValue)"
+    output = String(format: "%.1f \(unit.rawValue)", amount) // Round for the user
     
     return output
 }
