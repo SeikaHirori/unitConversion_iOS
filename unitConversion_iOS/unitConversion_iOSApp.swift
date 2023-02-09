@@ -16,12 +16,21 @@ struct unitConversion_iOSApp: App {
     }
 }
 
+
 enum unitMeasurementType:String {
     case mililiters = "mL"
     case liter = "L"
     case cup = "C"
     case pint = "pt"
     case gallon = "gal"
+}
+
+func displayMeasurement(amount:Double, unit:unitMeasurementType) -> String {
+    var output:String
+    
+    output = "\(amount)\(unit.rawValue)"
+    
+    return output
 }
 
 func mililitersToLiters(_ miliLiters: Double) -> Double {
