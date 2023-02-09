@@ -16,3 +16,13 @@
     - Link:
         - https://stackoverflow.com/a/34930127
     
+- RFER #4 - Fun trivia: US Gallon
+    - When gallon is used in this code, it's referring to US liquid gallons... Which is the common nomenclature.
+        - i.e.:
+            - 1 gal * 3785mL/gal = 3785mL
+        - US liquid gallon is DIFFERENT imperial gallon.
+    - Info:
+        - https://energyeducation.ca/encyclopedia/Gallon
+    - How this information was come across:
+        - When using Google to convert measurements, they had a dropdown menu to switch to a different measurement type.
+

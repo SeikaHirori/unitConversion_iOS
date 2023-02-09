@@ -24,28 +24,48 @@ enum unitMeasurementType:String {
     case gallon = "gal"
 }
 
-func convertMeasurements(amount: Double, from: unitMeasurementType, to: unitMeasurementType) -> Double? {
-    var output: Double? = nil
+func convertMeasurements(amount: Double, from: unitMeasurementType, to: unitMeasurementType) -> Double {
     
-    var convertAmountTo_mL: Double
+    func debug_print_invalidUnit(){
+        print("ERROR: Invalid")
+    }
+    
+    var output: Double
+    
+    var convertToBaseUnit: Double
     
     // Convert input amount into the base unit, mililiters
     switch from {
     case unitMeasurementType.mililiters:
-        convertAmountTo_mL = amount
+        convertToBaseUnit = amount
     case unitMeasurementType.liter:
-        convertAmountTo_mL = litersToMililiters(amount)
+        convertToBaseUnit = litersToMililiters(amount)
     case unitMeasurementType.cup:
-        convertAmountTo_mL = cupsToMililiters(amount)
+        convertToBaseUnit = cupsToMililiters(amount)
     case unitMeasurementType.pint:
-        convertAmountTo_mL = pintsToMililiters(amount)
+        convertToBaseUnit = pintsToMililiters(amount)
     case unitMeasurementType.gallon:
-        convertAmountTo_mL = gallonToMililiters(amount)
+        convertToBaseUnit = gallonToMililiters(amount)
     default:
-        return nil
+        debug_print_invalidUnit()
+        return -999.99
     }
     
-    
+    switch to {
+    case unitMeasurementType.mililiters:
+        output = convertToBaseUnit
+    case unitMeasurementType.liter:
+        output = mililitersToLiters(convertToBaseUnit)
+    case unitMeasurementType.cup:
+        output = mililitersToCup(convertToBaseUnit)
+    case unitMeasurementType.pint:
+        output = mililitersToPints(convertToBaseUnit)
+    case unitMeasurementType.gallon:
+        output = mililitersToGallon(convertToBaseUnit)
+    default:
+        debug_print_invalidUnit()
+        return -999.99
+    }
     
     return output
 }
@@ -74,7 +94,7 @@ func litersToMililiters(_ Liters: Double) -> Double {
     return result
 }
 
-func mililitersToC(_ mL:Double) -> Double {
+func mililitersToCup(_ mL:Double) -> Double {
     var result: Double
     
     result = mL / 236
@@ -109,7 +129,7 @@ func pintsToMililiters(_ Pints: Double) -> Double {
 func mililitersToGallon(_ mililiters: Double) -> Double {
     var result: Double = 0.0
     
-    result = mililiters / 3785
+    result = mililiters / 3785 // # RFER #4
     
     return result
 }
@@ -117,7 +137,7 @@ func mililitersToGallon(_ mililiters: Double) -> Double {
 func gallonToMililiters(_ Gallons:Double) -> Double {
     var result: Double = 0.0
     
-    result = Gallons * 3785
+    result = Gallons * 3785 // # RFER #4
     
     return result
 }

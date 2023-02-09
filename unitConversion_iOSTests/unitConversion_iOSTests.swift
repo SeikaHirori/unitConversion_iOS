@@ -49,7 +49,7 @@ final class unitConversion_iOSTests: XCTestCase {
         let inputMiliiters: Double = 236.6
         let expectedCup: Double = 1.0
         
-        let output1: Double = mililitersToC(inputMiliiters)
+        let output1: Double = mililitersToCup(inputMiliiters)
         
         XCTAssertEqual(output1, expectedCup, accuracy: accuraryRounded) // RFER #1
     }
@@ -135,20 +135,31 @@ final class unitConversion_iOSTests: XCTestCase {
         let result_2: String = displayMeasurementToUser(amount: input_amount_mL_2, unit: input_unit_mL)
         let expect_2:String = "29.2 mL"
         XCTAssertEqual(result_2, expect_2)
+        
+        let input_amount_mL_3:Double = 10.44
+        let result_3:String = displayMeasurementToUser(amount: input_amount_mL_3, unit: input_unit_mL)
+        let expect_3:String = "10.4 mL"
+        XCTAssertEqual(result_3, expect_3)
     }
     
     func testConvertMeasurements() {
         let input_mL_1:Double = 1000.0
         let input_from_1:unitMeasurementType = unitMeasurementType.mililiters
         let input_to_1:unitMeasurementType = unitMeasurementType.liter
-        let output_1: Double? = convertMeasurements(amount: input_mL_1, from: input_from_1, to: input_to_1)
-        XCTAssertNotNil(output_1)
+        let output_1: Double = convertMeasurements(amount: input_mL_1, from: input_from_1, to: input_to_1)
         
         let expect_1:Double = 1.0
         XCTAssertEqual(output_1, expect_1)
 
+        let input_2_L: Double = 0.51234
+        let output_2: Double = convertMeasurements(amount: input_2_L, from: unitMeasurementType.liter, to: unitMeasurementType.mililiters)
+        let expect_2:Double = 512.34
+        XCTAssertEqual(output_2, expect_2)
         
-        
+        let input_3_mL:Double = 4546.0900018742995599
+        let output_3:Double = convertMeasurements(amount: input_3_mL, from: unitMeasurementType.mililiters, to: unitMeasurementType.gallon)
+        let expect_3:Double = 1.20094992599999228
+        XCTAssertEqual(output_3, expect_3, accuracy: 0.01)
     }
     
 }
