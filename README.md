@@ -33,6 +33,7 @@ ___
         - [x] gal to mL
 
 **User Interface**
+- [x] Created private variables 
 - [ ] Segmented control (from)
     - Header: "Convert from"
 - [ ] Segmented control (to)
