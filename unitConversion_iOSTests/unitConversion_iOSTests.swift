@@ -100,7 +100,28 @@ final class unitConversion_iOSTests: XCTestCase {
         XCTAssertEqual(output1, expectedMililiters, accuracy: accuraryRounded)
     }
 
-    
+    func testEnumType() {
+        let enumType_mL:unitMeasurementType = unitMeasurementType.mililiters
+        let expect_RV_mL:String = "mL"
+        XCTAssertEqual(enumType_mL.rawValue, expect_RV_mL)
+        
+        let enumType_L:unitMeasurementType = unitMeasurementType.liter
+        let expect_RV_L:String = "L"
+        XCTAssertEqual(enumType_L.rawValue, expect_RV_L)
+        
+        let enumType_C:unitMeasurementType = unitMeasurementType.cup
+        let expect_RV_C: String = "C"
+        XCTAssertEqual(enumType_C.rawValue, expect_RV_C)
+        
+        let enumType_pt:unitMeasurementType = unitMeasurementType.pint
+        let expect_RV_pt:String = "pt"
+        XCTAssertEqual(enumType_pt.rawValue, expect_RV_pt)
+        
+        let enumType_gal:unitMeasurementType = unitMeasurementType.gallon
+        let expect_RV_gal:String = "gal"
+        XCTAssertEqual(enumType_gal.rawValue, expect_RV_gal)
+        
+    }
 
     
 }
