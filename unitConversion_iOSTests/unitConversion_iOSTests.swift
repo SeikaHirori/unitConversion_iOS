@@ -7,7 +7,6 @@
 
 import XCTest
 @testable import unitConversion_iOS
-import ViewInspector
 
 final class unitConversion_iOSTests: XCTestCase {
 

@@ -34,12 +34,12 @@ ___
 
 **User Interface**
 - [x] Created private variables 
-- [ ] Segmented control (from)
+- [x] Segmented control (from)
     - Header: "Convert from"
-- [ ] Segmented control (to)
+- [x] Segmented control (to)
     - Header: "Convert to"
-- [ ] textField where user inputs number
+- [x] textField where user inputs number
     - What is the amount you're converting?
     - Text (when empty) should state "Amount"
-- [ ] Text where it has the result of conversion
+- [x] Text where it has the result of conversion
     - Header: "Result/conversion"
