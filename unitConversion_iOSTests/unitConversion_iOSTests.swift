@@ -123,21 +123,21 @@ final class unitConversion_iOSTests: XCTestCase {
     }
 
     func testDisplayMeasurementToUser() {
-        let input_amount_mL_1:Double = 1000.0
+        let input_amount_mL_1:Double = 1000.001230
         let input_unit_mL: unitMeasurementType = unitMeasurementType.mililiters
-        let expect_1:String = "1000.0 mL"
+        let expect_1:String = "1000.00 mL"
         
         let result_1:String = displayMeasurementToUser(amount: input_amount_mL_1, unit: input_unit_mL)
         XCTAssertEqual(result_1, expect_1)
         
         let input_amount_mL_2:Double = 29.194
         let result_2: String = displayMeasurementToUser(amount: input_amount_mL_2, unit: input_unit_mL)
-        let expect_2:String = "29.2 mL"
+        let expect_2:String = "29.19 mL"
         XCTAssertEqual(result_2, expect_2)
         
-        let input_amount_mL_3:Double = 10.44
+        let input_amount_mL_3:Double = 10.442
         let result_3:String = displayMeasurementToUser(amount: input_amount_mL_3, unit: input_unit_mL)
-        let expect_3:String = "10.4 mL"
+        let expect_3:String = "10.44 mL"
         XCTAssertEqual(result_3, expect_3)
     }
     

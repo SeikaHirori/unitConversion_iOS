@@ -38,3 +38,4 @@
 - RFER #7: Keeping textField on the right side of box when entrying value
     - text alignment in SwiftUI 
         - https://developer.apple.com/forums/thread/119704?answerId=371549022#371549022
+- RFER #8:

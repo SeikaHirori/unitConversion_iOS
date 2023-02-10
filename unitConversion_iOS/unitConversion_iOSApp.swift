@@ -68,7 +68,8 @@ func displayMeasurementToUser(amount:Double, unit:unitMeasurementType) -> String
     var output:String
     
     // Rounded for the user to see
-    output = String(format: "%.2f \(unit.rawValue)", amount) // RFER #3
+    output = String(format: "%.2f", amount) // RFER #3
+    output += " \(unit.rawValue)"
     
     return output
 }
