@@ -1,9 +1,9 @@
 #  Unit Conversion
 
-***Reflection post***
-- TBA
+**Reflection post**
+- TBA on https://seikahirori.blogspot.com/
 
-***Project Specifications***
+**Project Specifications**
 - https://www.hackingwithswift.com/100/swiftui/19
 
 Note-worthy:
