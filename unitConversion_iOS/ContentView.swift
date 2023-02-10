@@ -15,7 +15,7 @@ struct ContentView: View {
     @FocusState private var amountFromIsFocused: Bool
     
     var amountToValue:Double {
-        var result:Double = convertMeasurements(amount: amountFromValue, from: unitTypeFrom, to: unitTypeTo)
+        let result:Double = convertMeasurements(amount: amountFromValue, from: unitTypeFrom, to: unitTypeTo)
         return result
     }
     

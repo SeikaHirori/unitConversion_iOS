@@ -26,3 +26,6 @@
     - How this information was come across:
         - When using Google to convert measurements, they had a dropdown menu to switch to a different measurement type.
 
+- RFER #5: how to reduce boilerplate code when using enum with Switch case
+    - Link :
+        - https://www.hackingwithswift.com/read/0/14/enumerations

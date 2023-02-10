@@ -35,36 +35,30 @@ func convertMeasurements(amount: Double, from: unitMeasurementType, to: unitMeas
     var convertToBaseUnit: Double
     
     // Convert input amount into the base unit, mililiters
-    switch from {
-    case unitMeasurementType.mililiters:
+    switch from { //
+    case .mililiters:
         convertToBaseUnit = amount
-    case unitMeasurementType.liter:
+    case .liter:
         convertToBaseUnit = litersToMililiters(amount)
-    case unitMeasurementType.cup:
+    case .cup:
         convertToBaseUnit = cupsToMililiters(amount)
-    case unitMeasurementType.pint:
+    case .pint:
         convertToBaseUnit = pintsToMililiters(amount)
-    case unitMeasurementType.gallon:
+    case .gallon:
         convertToBaseUnit = gallonToMililiters(amount)
-    default:
-        debug_print_invalidUnit()
-        return -999.99
     }
     
     switch to {
-    case unitMeasurementType.mililiters:
+    case .mililiters:
         output = convertToBaseUnit
-    case unitMeasurementType.liter:
+    case .liter:
         output = mililitersToLiters(convertToBaseUnit)
-    case unitMeasurementType.cup:
+    case .cup:
         output = mililitersToCup(convertToBaseUnit)
-    case unitMeasurementType.pint:
+    case .pint:
         output = mililitersToPints(convertToBaseUnit)
-    case unitMeasurementType.gallon:
+    case .gallon:
         output = mililitersToGallon(convertToBaseUnit)
-    default:
-        debug_print_invalidUnit()
-        return -999.99
     }
     
     return output
