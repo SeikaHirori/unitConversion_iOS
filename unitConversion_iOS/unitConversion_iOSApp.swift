@@ -19,7 +19,7 @@ struct unitConversion_iOSApp: App {
 enum unitMeasurementType:String, CaseIterable { // RFER #6
     case mililiters = "mL"
     case liter = "L"
-    case cup = "C"
+    case cup = "Cups"
     case pint = "pt"
     case gallon = "gal"
 }

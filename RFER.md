@@ -32,4 +32,9 @@
 
 - RFER #6: How to loop through enum for SwiftUI
     - Link:
-        - Picker driven by enum - https://developer.apple.com/forums/thread/126706?answerId=397254022#397254022
+        - Picker driven by enum 
+            - https://developer.apple.com/forums/thread/126706?answerId=397254022#397254022
+
+- RFER #7: Keeping textField on the right side of box when entrying value
+    - text alignment in SwiftUI 
+        - https://developer.apple.com/forums/thread/119704?answerId=371549022#371549022

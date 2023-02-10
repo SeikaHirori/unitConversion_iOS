@@ -17,9 +17,10 @@ struct ContentView: View {
     
     @FocusState private var amountFromIsFocused: Bool
     
-    var toValue:Double {
+    var toValueResult:String {
         let result:Double = convertMeasurements(amount: fromValue, from: unitTypeFrom, to: unitTypeTo)
-        return result
+        let output:String = displayMeasurementToUser(amount: result, unit: unitTypeTo)
+        return output
     }
     
     var body: some View {
@@ -29,27 +30,43 @@ struct ContentView: View {
                     TextField("input amount", value: $fromValue, format: .number)
                         .keyboardType(.decimalPad)
                         .focused($amountFromIsFocused)
+//                        .multilineTextAlignment(.trailing) // Disabled as unable to get Text "OUTCOME" to align to the right with current limited knowledge.
                 } header: {
                     Text("Amount?")
                 }
                 
                 Section {
                     Picker("Convert from", selection: $unitTypeFrom) {
+                        // RFER #6
+                        ForEach(unitMeasurementType.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                        
                     }
                 } header: {
-                    Text("Convert from")
+                    Text("Convert from") // TO-DO
                 }
+                .pickerStyle(.segmented)
                 
                 Section {
-                    
+                    Picker("Convert to", selection: $unitTypeTo) {
+                        // RFER #6
+                        ForEach(unitMeasurementType.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                        
+                    }
                 } header: {
-                    Text("Convert to")
+                    Text("Convert to") // TO-DO
                 }
+                .pickerStyle(.segmented)
                 
                 Section {
-                    
+                    Text(toValueResult)
+                        .frame(alignment: .trailing)
+//                        .multilineTextAlignment(.trailing)
                 } header: {
-                    Text("Outcome")
+                    Text("Outcome (Rounded to the nearest tenth place)") // TO-DO
                 }
                 
                 

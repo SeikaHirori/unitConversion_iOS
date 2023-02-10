@@ -110,7 +110,7 @@ final class unitConversion_iOSTests: XCTestCase {
         XCTAssertEqual(enumType_L.rawValue, expect_RV_L)
         
         let enumType_C:unitMeasurementType = unitMeasurementType.cup
-        let expect_RV_C: String = "C"
+        let expect_RV_C: String = "Cups"
         XCTAssertEqual(enumType_C.rawValue, expect_RV_C)
         
         let enumType_pt:unitMeasurementType = unitMeasurementType.pint
