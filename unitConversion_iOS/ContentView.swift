@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State private var unitTypeFrom:unitMeasurementType = unitMeasurementType.mililiters
     @State private var unitTypeTo: unitMeasurementType = unitMeasurementType.liter
-    @State private var amountFromValue: Double = 0.0
+    @State private var fromValue: Double = 0.0
     
     @FocusState private var amountFromIsFocused: Bool
     
-    var amountToValue:Double {
-        let result:Double = convertMeasurements(amount: amountFromValue, from: unitTypeFrom, to: unitTypeTo)
+    var toValue:Double {
+        let result:Double = convertMeasurements(amount: fromValue, from: unitTypeFrom, to: unitTypeTo)
         return result
     }
     
