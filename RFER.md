@@ -29,3 +29,7 @@
 - RFER #5: how to reduce boilerplate code when using enum with Switch case
     - Link :
         - https://www.hackingwithswift.com/read/0/14/enumerations
+
+- RFER #6: How to loop through enum for SwiftUI
+    - Link:
+        - Picker driven by enum - https://developer.apple.com/forums/thread/126706?answerId=397254022#397254022

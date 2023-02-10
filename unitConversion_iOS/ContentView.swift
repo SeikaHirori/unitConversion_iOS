@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Place Holders :3
+    let debugPlaceHolder:String = "DEBUG: Hello lovely chaps :3"
+    
     @State private var unitTypeFrom:unitMeasurementType = unitMeasurementType.mililiters
     @State private var unitTypeTo: unitMeasurementType = unitMeasurementType.liter
     @State private var fromValue: Double = 0.0
@@ -20,13 +23,39 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                Section {
+                    TextField("input amount", value: $fromValue, format: .number)
+                        .keyboardType(.decimalPad)
+                        .focused($amountFromIsFocused)
+                } header: {
+                    Text("Amount?")
+                }
+                
+                Section {
+                    Picker("Convert from", selection: $unitTypeFrom) {
+                    }
+                } header: {
+                    Text("Convert from")
+                }
+                
+                Section {
+                    
+                } header: {
+                    Text("Convert to")
+                }
+                
+                Section {
+                    
+                } header: {
+                    Text("Outcome")
+                }
+                
+                
+            }
         }
-        .padding()
+
     }
 }
 

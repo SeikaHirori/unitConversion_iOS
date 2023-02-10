@@ -16,7 +16,7 @@ struct unitConversion_iOSApp: App {
     }
 }
 
-enum unitMeasurementType:String {
+enum unitMeasurementType:String, CaseIterable { // RFER #6
     case mililiters = "mL"
     case liter = "L"
     case cup = "C"
